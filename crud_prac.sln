@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.1525
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "crud_prac", "crud_prac\crud_prac.csproj", "{2C5ECDBC-99C1-454C-AF74-F8B14771AC49}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary1", "ClassLibrary1\ClassLibrary1.csproj", "{32D4ECDA-0E8C-4AAB-A621-19DC89D66F8A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{2C5ECDBC-99C1-454C-AF74-F8B14771AC49}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2C5ECDBC-99C1-454C-AF74-F8B14771AC49}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2C5ECDBC-99C1-454C-AF74-F8B14771AC49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32D4ECDA-0E8C-4AAB-A621-19DC89D66F8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32D4ECDA-0E8C-4AAB-A621-19DC89D66F8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32D4ECDA-0E8C-4AAB-A621-19DC89D66F8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32D4ECDA-0E8C-4AAB-A621-19DC89D66F8A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

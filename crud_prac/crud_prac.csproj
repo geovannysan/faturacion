@@ -12,6 +12,8 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -33,6 +35,26 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ClassLibrary1">
+      <HintPath>..\ClassLibrary1\bin\Debug\ClassLibrary1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.Desktop.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Data.21.1.5\lib\net452\DevExpress.Data.v21.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v21.1.Core, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Guna.UI2, Version=2.0.2.0, Culture=neutral, PublicKeyToken=e4b9cdd7b4cde4b4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.2\lib\net40\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialDesignColors, Version=2.0.2.2657, Culture=neutral, PublicKeyToken=df2a72020bd7962a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialDesignColors.2.0.2-ci2657\lib\net452\MaterialDesignColors.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialSkin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialSkin.Updated.0.2.2\lib\MaterialSkin.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,14 +68,186 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Base.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base.Designer.cs">
+      <DependentUpon>Base.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Compras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compras.Designer.cs">
+      <DependentUpon>Compras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="factura\Factura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="factura\Factura.Designer.cs">
+      <DependentUpon>Factura.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="herramienta\Administracion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="herramienta\Administracion.Designer.cs">
+      <DependentUpon>Administracion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ingresos\FormBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ingresos\FormBase.Designer.cs">
+      <DependentUpon>FormBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ingresos\Categoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ingresos\Categoria.Designer.cs">
+      <DependentUpon>Categoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ingresos\Cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ingresos\Cliente.Designer.cs">
+      <DependentUpon>Cliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ingresos\Consulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ingresos\Consulta.Designer.cs">
+      <DependentUpon>Consulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ingresos\Iva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ingresos\Iva.Designer.cs">
+      <DependentUpon>Iva.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ingresos\Productos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ingresos\Productos.Designer.cs">
+      <DependentUpon>Productos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ingresos\Provedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ingresos\Provedor.Designer.cs">
+      <DependentUpon>Provedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ingresos\Subcate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ingresos\Subcate.Designer.cs">
+      <DependentUpon>Subcate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ingresos\Tipocliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ingresos\Tipocliente.Designer.cs">
+      <DependentUpon>Tipocliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="listas\Consultacatego.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="listas\Consultacatego.Designer.cs">
+      <DependentUpon>Consultacatego.cs</DependentUpon>
+    </Compile>
+    <Compile Include="listas\Consultaprove.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="listas\Consultaprove.Designer.cs">
+      <DependentUpon>Consultaprove.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mantenimiento\Almacen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mantenimiento\Almacen.Designer.cs">
+      <DependentUpon>Almacen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mantenimiento\Mantenimieto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mantenimiento\Mantenimieto.Designer.cs">
+      <DependentUpon>Mantenimieto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Panel.Designer.cs">
+      <DependentUpon>Panel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Base.resx">
+      <DependentUpon>Base.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Compras.resx">
+      <DependentUpon>Compras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="factura\Factura.resx">
+      <DependentUpon>Factura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="herramienta\Administracion.resx">
+      <DependentUpon>Administracion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ingresos\FormBase.resx">
+      <DependentUpon>FormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ingresos\Categoria.resx">
+      <DependentUpon>Categoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ingresos\Cliente.resx">
+      <DependentUpon>Cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ingresos\Consulta.resx">
+      <DependentUpon>Consulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ingresos\Iva.resx">
+      <DependentUpon>Iva.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ingresos\Provedor.resx">
+      <DependentUpon>Provedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ingresos\Subcate.resx">
+      <DependentUpon>Subcate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ingresos\Tipocliente.resx">
+      <DependentUpon>Tipocliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="listas\Consultacatego.resx">
+      <DependentUpon>Consultacatego.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="listas\Consultaprove.resx">
+      <DependentUpon>Consultaprove.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mantenimiento\Almacen.resx">
+      <DependentUpon>Almacen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mantenimiento\Mantenimieto.resx">
+      <DependentUpon>Mantenimieto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panel.resx">
+      <DependentUpon>Panel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -62,7 +256,9 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -76,5 +272,18 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-analytics-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-analytics-64 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximize_button_24px.png" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

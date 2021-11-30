@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace crud_prac
+namespace FormBase
 {
     static class Program
     {
@@ -16,7 +16,7 @@ namespace crud_prac
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new mantenimiento.Almacen());
+            Application.Run(new Form1());
         }
     }
 }
